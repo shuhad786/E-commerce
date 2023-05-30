@@ -12,4 +12,12 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
+  overrides: [
+    {
+      files: ['src//index.css'],
+      rules: {
+        'at-rule-no-unknown': [2, { ignoreAtRules: ['tailwind'] }],
+      },
+    },
+  ],
 }
