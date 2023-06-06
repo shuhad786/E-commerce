@@ -10,6 +10,15 @@
     color: #fcfaf9;
   }
 
+  .color4 {
+    color: #494848;
+  }
+
+  .color4:hover {
+    text-decoration: underline;
+    color: #48e5c2;
+  }
+
   .bg-color1 {
     background-color: #333333;
   }

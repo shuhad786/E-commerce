@@ -4,6 +4,11 @@
 
 /* #333333, #48e5c2, #fcfaf9 */
 
+html body {
+  padding: 0;
+  margin: 0;
+}
+
 .color1 {
   color: #333333;
 }
