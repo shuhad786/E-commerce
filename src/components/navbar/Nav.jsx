@@ -55,8 +55,28 @@ function Nav() {
                 </a>
               </li>
             </ul>
+            </div>
+            </nav>
+    
+      <nav class="bg-neutral-700">
+          <div class="max-w-screen-xl px-4 py-3">
+              <div class="flex items-center justify-end">
+                  <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+                      <li>
+                          <a href="#" class="text-emerald-400 font-semibold hover:text-white hover:underline" aria-current="page">Home</a>
+                      </li>
+                      <li>
+                          <a href="#" class="text-emerald-400 font-semibold hover:text-white hover:underline">Company</a>
+                      </li>
+                      <li>
+                          <a href="#" class="text-emerald-400 font-semibold hover:text-white hover:underline">Team</a>
+                      </li>
+                      <li>
+                          <a href="#" class="text-emerald-400 font-semifold hover:text-white hover:underline">Features</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </nav>
     </>
   );
