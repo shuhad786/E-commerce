@@ -9,7 +9,7 @@ function App() {
       <NavBar />
       <MainPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
