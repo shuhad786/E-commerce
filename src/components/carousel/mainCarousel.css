@@ -1,0 +1,30 @@
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+  }
+  
+  .carousel-indicator {
+    background-color: gray;
+    width: 20px;
+    height: 3px;
+    border-radius: 20px;
+    margin: 0 4px;
+  }
+  
+  .carousel-indicator.active {
+    background-color: blue;
+    border-radius: 20px;
+  }
