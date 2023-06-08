@@ -8,10 +8,7 @@ function App() {
   return (
     <div id='app'>
       <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/item/:id' element={<Item />} />
-      </Routes>
+      
     </div>
   );
 }
