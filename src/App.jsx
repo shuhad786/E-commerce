@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from './components/navbar/Nav'
 import MainPage from './components/main_page/MainPage'
 import './App.css'
