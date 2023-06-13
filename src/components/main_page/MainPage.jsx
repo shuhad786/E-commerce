@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from '../modal/Modal';
-import Carousel from '../carousel/mainCarousel';
+import { Link } from 'react-router-dom';
+// import Carousel from '../carousel/mainCarousel';
 import Temp from '../carousel/carouselTemp';
 import Sale from '../../assets/sale-main-image.png';
 import Test from '../../assets/test-image.jpg';
@@ -32,7 +33,7 @@ function MainPage() {
       <div className="flex w-3/5 justify-evenly">
         <button className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400">Men's Clothing <i className="fa-solid fa-angle-down ml-1"></i></button>
         <button className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400">Women's Clothing <i className="fa-solid fa-angle-down ml-1"></i></button>
-        <button className="px-4 px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400">Jewellery <i className="fa-solid fa-angle-down ml-1"></i></button>
+        <button className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400">Jewellery <i className="fa-solid fa-angle-down ml-1"></i></button>
         <button className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400">Electronics <i className="fa-solid fa-angle-down ml-1"></i></button>
       </div>
       
@@ -49,7 +50,7 @@ function MainPage() {
                 <i className="fa-solid fa-circle-info text-2xl text-slate-400 hover:text-emerald-400"></i>
               </button>
               <button className="p-2 h-min bg-neutral-300 font-semibold text-xs rounded-full items-center flex">
-                <span className="ml-2 font-semibold text-sm hover:text-white">Add to Cart</span>
+                <Link to="/cart"><span className="ml-2 font-semibold text-sm">Add to Cart</span></Link>
                 <i className="fa-solid fa-cart-shopping text-lg ml-2 text-slate-400 hover:text-white"></i>
               </button>
             </div>
