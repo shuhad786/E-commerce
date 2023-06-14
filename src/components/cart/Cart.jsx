@@ -3,15 +3,15 @@ import "./cart.css";
 
 const Cart = () => {
   return (
-    <div>
-      <div className=''>
+    <div className='p-10'>
+      <div className='p-2 border border-solid border-slate-400 rounded-lg'>
         <h1 className='text-2xl font-bold'>Review Item And Shipping</h1>
         <div className='flex justify-between items-center p-5px'>
-          <div className='flex justify-between items-center'>
+          <div className='flex items-center'>
             <img src={Headset} alt='headset' />
             <div>
-              <h1 className='text-2l font-bold'>Airpods- Max</h1>
-              <h3>Color: Pink</h3>
+              <h1 className='text-4xl font-bold mb-4'>Airpods- Max</h1>
+              <h3 className='text-lg font-semibold'>Color: Pink</h3>
             </div>
           </div>
           <div className='flexRight'>
@@ -21,14 +21,18 @@ const Cart = () => {
         </div>
       </div>
 
-      <div className=''>
-        <h1 className='text-2l font-bold'>Shipping Address</h1>
+      <div className='mt-10'>
+        <h1 className='text-2xl font-bold'>Shipping Details</h1>
         <form>
-          <label className='font-bold'>Full Name</label>
-          <input type='text' placeholder='Full Name' />
+          <span className='flex'>
+            <label className='font-bold mr-16'>Full Name</label>
+            <input type='text' placeholder='Full Name' />
+          </span>
           <br />
-          <label className='font-bold '>Address</label>
-          <input type='text' placeholder='Address' />
+          <span className='flex'>
+            <label className='font-bold mr-16'>Address</label>
+            <input type='text' placeholder='Address' />
+          </span>
           <br />
           <label className='font-bold '>City</label>
           <input type='text' placeholder='City' />
@@ -42,9 +46,10 @@ const Cart = () => {
           <label className='font-bold '>Mobile</label>
           <input type='tel' placeholder='Mobile' />
           <br />
-          <label htmlFor='email' className='font-bold '>Email</label>
+          <label htmlFor='email' className='font-bold '>
+            Email
+          </label>
           <input type='email' placeholder='Email' />
-       
         </form>
       </div>
 
