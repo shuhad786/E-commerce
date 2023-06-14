@@ -1,55 +1,62 @@
 import Headset from "../../assets/headset.jpg";
-import "./cart.css";
 
-const Cart = () => {
+function Cart() {
   return (
     <div className='p-10'>
-      <div className='p-2 border border-solid border-slate-400 rounded-lg'>
-        <h1 className='text-2xl font-bold'>Review Item And Shipping</h1>
-        <div className='flex justify-between items-center p-5px'>
-          <div className='flex items-center'>
-            <img src={Headset} alt='headset' />
+      <div className='p-2 shadow-lg rounded-xl shadow-gray-300'>
+        <h1 className='text-5xl font-bold text-center'>Review Item And Shipping</h1>
+        <div className='flex justify-between items-center mt-12'>
+          <div className='flex items-center '>
+            <img className="w-1/3" src={Headset} alt='headset'/>
             <div>
-              <h1 className='text-4xl font-bold mb-4'>Airpods- Max</h1>
-              <h3 className='text-lg font-semibold'>Color: Pink</h3>
+              <h1 className='text-3xl font-bold mb-4'>Airpods- Max</h1>
+              <h3 className='text-md font-semibold'>Color: Pink</h3>
             </div>
           </div>
-          <div className='flexRight'>
-            <h3 className='font-bold'>$ 500</h3>
-            <p>Quantity: 01</p>
+          <div className="mr-20">
+            <h3 className='font-bold text-lg'>$ 500</h3>
+            <p className='w-32 font-bold text-lg'>Quantity: 01</p>
           </div>
         </div>
       </div>
 
-      <div className='mt-10'>
-        <h1 className='text-2xl font-bold'>Shipping Details</h1>
-        <form>
-          <span className='flex'>
+      <div className='mt-10 p-10 shadow-lg rounded-xl shadow-gray-300'>
+        <h1 className='text-4xl font-bold text-center'>Shipping Details</h1>
+        <form className="mt-16">
+          <span className='grid grid-cols-2 w-96 mt-4'>
             <label className='font-bold mr-16'>Full Name</label>
-            <input type='text' placeholder='Full Name' />
+            <input className="pl-2 px-2 rounded-xl shadow-inner shadow-gray-300" type='text' placeholder='Full Name' />
           </span>
           <br />
-          <span className='flex'>
+          <span className='grid grid-cols-2 w-96 mt-4'>
             <label className='font-bold mr-16'>Address</label>
-            <input type='text' placeholder='Address' />
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='text' placeholder='Address' />
           </span>
           <br />
-          <label className='font-bold '>City</label>
-          <input type='text' placeholder='City' />
+          <span className='grid grid-cols-2 w-96 mt-4'>
+            <label className='font-bold '>City</label>
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='text' placeholder='City' />
+          </span>
           <br />
-          <label className='font-bold '>Country</label>
-          <input type='text' placeholder='Country' />
+          <span className='grid grid-cols-2 w-96 mt-4'>
+            <label className='font-bold'>Country</label>
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='text' placeholder='Country' />
           <br />
-          <label className='font-bold '>Zip Code</label>
-          <input type='text' placeholder='Zip Code' />
+          </span>
+          <span className='grid grid-cols-2 w-96 mt-4'>
+            <label className='font-bold'>Zip Code</label>
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='text' placeholder='Zip Code' />
           <br />
-          <label className='font-bold '>Mobile</label>
-          <input type='tel' placeholder='Mobile' />
+          </span>
+          <span className='grid grid-cols-2 w-96 mt-4'>
+            <label className='font-bold'>Mobile</label>
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='tel' placeholder='Mobile' />
+          </span>
           <br />
-          <label htmlFor='email' className='font-bold '>
-            Email
-          </label>
-          <input type='email' placeholder='Email' />
+          <span className='grid grid-cols-2 w-96 mt-4'>
+            <label htmlFor='email' className='font-bold '>Email</label>
+            <input className="px-2 rounded-xl shadow-inner shadow-gray-300" type='email' placeholder='Email' />
+          </span>
         </form>
       </div>
 
