@@ -30,34 +30,7 @@ function Nav() {
         </div>
       </nav>
 
-      <nav className='bg-color4'>
-        <div className='max-w-screen-xl px-4 py-3 mx-auto'>
-          <div className='flex items-center justify-end'>
-            <ul className='flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm'>
-              <li>
-                <Link to='/' className='text-gray-900 color2 hover:underline'>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <a href='#' className='text-gray-900 color2 hover:underline'>
-                  Company
-                </a>
-              </li>
-              <li>
-                <a href='#' className='text-gray-900 color2 hover:underline'>
-                  Team
-                </a>
-              </li>
-              <li>
-                <a href='#' className='text-gray-900 color2 hover:underline'>
-                  Features
-                </a>
-              </li>
-            </ul>
-            </div>
-            </div>
-            </nav>
+     
     
       <nav className="bg-neutral-700">
           <div className="max-w-screen-xl px-4 py-3">
