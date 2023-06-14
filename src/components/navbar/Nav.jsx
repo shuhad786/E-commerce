@@ -1,19 +1,20 @@
-import "./nav.css";
 import { Link } from "react-router-dom";
+import LogoFlower from '../../assets/logo-flower.png';
+import "./nav.css";
 
 function Nav() {
   return (
     <>
-      <nav className='bg-color1 border-gray-200'>
+      <nav className='bg-neutral-800'>
         <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4'>
           <a href='https://flowbite.com' className='flex items-center'>
             <img
-              src='https://flowbite.com/docs/images/logo.svg'
-              className='h-8 mr-3'
+              src={LogoFlower}
+              className='w-12 rounded-full mr-3'
               alt='Flowbite Logo'
             />
             <span className='self-center text-2xl font-semibold whitespace-nowrap color2'>
-              Flowbite
+              Bloomify
             </span>
           </a>
           <div className='flex items-center'>
@@ -30,8 +31,6 @@ function Nav() {
         </div>
       </nav>
 
-     
-    
       <nav className="bg-neutral-700">
           <div className="max-w-screen-xl px-4 py-3">
               <div className="flex items-center justify-end">
