@@ -10,7 +10,7 @@ const Items = () => {
       <div className="grid grid-cols-4 gap-3 mt-6">
         {items.map((item) => (
           <div
-            className="flex flex-col items-center p-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] rounded-xl"
+            className="flex flex-col bg-slate-50 items-center p-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] rounded-xl"
             key={item.id}
           >
             <img
@@ -33,8 +33,6 @@ const Items = () => {
             </div>
             <div>
               <p className="text-lg font-semibold">{item.name}</p>
-              <p className="text-gray-500">${item.price}</p>
-              <p className="text-sm">{item.description}</p>
             </div>
           </div>
         ))}
