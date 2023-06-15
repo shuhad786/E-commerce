@@ -3,7 +3,7 @@ import {  useDispatch, useSelector } from "react-redux";
 import { fetchItems } from "../../redux/HomeSlice";
 import Items from "./Items";
 
-const Home = () => {
+const Card = () => {
   const dispatch = useDispatch();
 
 	const { items } = useSelector((state) => state.items)
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Card;

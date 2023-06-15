@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Modal from '../modal/Modal';
 import { Link } from 'react-router-dom';
 // import Carousel from '../carousel/mainCarousel';
-import Temp from '../carousel/carouselTemp';
+// import Temp from '../carousel/carouselTemp';
+import Card from '../items/Card';
 import Sale from '../../assets/sale-main-image.png';
 import Test from '../../assets/test-image.jpg';
 
@@ -38,7 +39,8 @@ function MainPage() {
       </div>
       
       {/* Modal code below */}
-      <div className="grid grid-cols-3 gap-4 mt-6">
+      <Card />
+      {/* <div className="grid grid-cols-3 gap-4 mt-6">
         {imageList.map((image, index) => (
           <div className="flex flex-col items-center pt-4 bg-neutral-200 rounded-lg" key={index}>
             <img className="w-64 h-56" src={image} alt={`Image ${index + 1}`} />
@@ -56,7 +58,7 @@ function MainPage() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       {isModalOpen && activeModalIndex !== null && (
         <Modal closeModal={closeModal} />
       )}
@@ -64,7 +66,8 @@ function MainPage() {
       <div className="mt-16">
         <h2 className="text-emerald-400 text-3xl font-bold">Similar Items You May Like</h2>
         {/* <Carousel images={imageList} accessModal={openModal}/> */}
-        <Temp images={imageList} accessModal={openModal} />
+        {/* <Temp images={imageList} accessModal={openModal} /> */}
+        
       </div>
     </div>
   );
