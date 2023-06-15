@@ -10,7 +10,7 @@ const Items = () => {
       <div className="grid grid-cols-4 gap-3 mt-6">
         {items.map((item) => (
           <div
-            className="flex flex-col items-center p-4 shadow-xl rounded-xl"
+            className="flex flex-col items-center p-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] rounded-xl"
             key={item.id}
           >
             <img
