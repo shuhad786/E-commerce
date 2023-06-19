@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from '../modal/Modal';
 // import Carousel from '../carousel/mainCarousel';
 // import Temp from '../carousel/carouselTemp';
 import Card from '../items/Card';
