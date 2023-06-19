@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import LogoFlower from '../../assets/logo-flower.png';
 import "./nav.css";
 
@@ -10,7 +9,7 @@ function Nav() {
           <a href='https://flowbite.com' className='flex items-center'>
             <img
               src={LogoFlower}
-              className='w-12 rounded-full mr-3'
+              className='w-12 rounded-full mr-3 shadow-[0px_0px_10px_5px_#48BB78]'
               alt='Flowbite Logo'
             />
             <span className='self-center text-2xl font-semibold whitespace-nowrap color2'>
