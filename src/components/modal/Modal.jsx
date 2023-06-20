@@ -2,7 +2,7 @@ import React from 'react';
 
 function Modal({ closeModal }) {
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-tranparent backdrop-blur">
       <div className="bg-white rounded-lg shadow-lg dark:bg-gray-700">
         {/* Modal content */}
         <div className="p-4">
