@@ -6,6 +6,12 @@ export const fetchItems = createAsyncThunk("posts/fetchItems", async () => {
   return data;
 });
 
+export const fetchByItem = createAsyncThunk("posts/fetchByItem", async () => {
+  const response = await fetch("https://fakestoreapi.com/products/1");
+  const data = await response.json();
+  return data;
+});
+
 export const fetchItemsByWomenClothing = createAsyncThunk("posts/fetchItemsByWomenClothing", async () => {
   const response = await fetch(`https://fakestoreapi.com/products/category/women%27s%20clothing/`);
   const data = await response.json();
@@ -93,6 +99,17 @@ const homeSlice = createSlice({
         state.items = action.payload;
       })
       .addCase(fetchItemsByElectronics.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message;
+      })
+      .addCase(fetchByItem.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchByItem.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.items = action.payload;
+      })
+      .addCase(fetchByItem.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
       })

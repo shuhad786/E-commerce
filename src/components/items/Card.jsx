@@ -6,7 +6,7 @@ import Items from "./Items";
 const Card = () => {
   const dispatch = useDispatch();
 
-	const { items } = useSelector((state) => state.items)
+	const { items } = useSelector((state) => state.items);
   
   useEffect(() => {
     dispatch(fetchItems());
