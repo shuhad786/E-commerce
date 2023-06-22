@@ -1,21 +1,23 @@
-import Headset from "../../assets/headset.jpg";
+import React from "react";
+import { useSelector } from 'react-redux';
 
 function Cart() {
+  const selectedItem = useSelector((state) => state.cart.selectedItem);
+
   return (
     <div className='p-10'>
       <div className='p-2 shadow-lg rounded-xl shadow-gray-300'>
         <h1 className='text-5xl font-bold text-center'>Review Item And Shipping</h1>
-        <div className='flex justify-between items-center mt-12'>
-          <div className='flex items-center '>
-            <img className="w-1/3" src={Headset} alt='headset'/>
-            <div>
-              <h1 className='text-3xl font-bold mb-4'>Airpods- Max</h1>
-              <h3 className='text-md font-semibold'>Color: Pink</h3>
-            </div>
-          </div>
-          <div className="mr-20">
-            <h3 className='font-bold text-lg'>$ 500</h3>
-            <p className='w-32 font-bold text-lg'>Quantity: 01</p>
+        <span className="flex justify-center mt-10">
+          <hr className="w-3/4 h-[3px] bg-neutral-200 rounded-2xl"/>
+        </span>
+        <div className='flex justify-between items-center mt-12 p-4'>
+          <img className="w-64" src={selectedItem.image} alt={selectedItem.title}/>
+          <div className="ml-10 shadow-inner shadow-neutral-400 p-3 rounded-xl">
+            <h1 className='text-3xl font-bold mb-4'>{selectedItem.title}</h1>
+            <h3 className='text-md font-semibold mb-4'>{selectedItem.description}</h3>
+            <h3 className='font-bold text-lg mb-4'>price: {selectedItem.price}</h3>
+            <p className='w-32 font-bold text-lg'>count: {selectedItem.rating.count}</p>
           </div>
         </div>
       </div>
