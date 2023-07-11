@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div id='app' className='overflow-x-hidden'>
+    <div id='app' className='overflow-x-hidden overflow-y-hidden'>
         <NavBar />
         <Routes>
           <Route path='/' element={<MainPage />} />

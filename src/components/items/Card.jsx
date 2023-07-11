@@ -6,7 +6,7 @@ import Items from "./Items";
 const Card = () => {
   const dispatch = useDispatch();
 
-	const { items } = useSelector((state) => state.items);
+	const items = useSelector((state) => state.items.items);
   
   useEffect(() => {
     dispatch(fetchItems());
@@ -33,7 +33,7 @@ const Card = () => {
   };
 
   return (
-    <div>
+    <div className="overscroll-y-none">
       <div className="flex w-full justify-between">
         <div className="flex w-3/5 justify-evenly">
           <button onClick={handleByMenClothing} className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400 hover:text-white">Men's Clothing <i className="fa-solid fa-angle-down ml-1"></i></button>
@@ -44,8 +44,9 @@ const Card = () => {
         <button onClick={handleByAll} className="px-4 py-2 mr-2 bg-slate-200 font-semibold rounded-full hover:bg-emerald-400 hover:text-white">Display all <i class="fa-solid fa-angles-down"></i></button>
       </div>
       {items?.map((item) => (
-        <Items key={item.id.toString()} item={item} />
+        <Items key={item.id} item={item} />
       ))}
+      
     </div>
   );
 };
