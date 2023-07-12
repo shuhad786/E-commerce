@@ -36,13 +36,6 @@ export const fetchItemsByElectronics = createAsyncThunk("posts/fetchItemsByElect
   return data;
 });
 
-export const fetchImages = createAsyncThunk("posts/fetchImages", async () => {
-  const response = await fetch('https://fakestoreapi.com/products');
-  const data = await response.json();
-
-  return data.map(product => product.image);
-});
-
 const homeSlice = createSlice({
   name: "items",
   initialState: {
@@ -117,17 +110,6 @@ const homeSlice = createSlice({
         state.items = action.payload;
       })
       .addCase(fetchByItem.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message;
-      })
-      .addCase(fetchImages.pending, (state) => {
-        state.status = "loading";
-      })
-      .addCase(fetchImages.fulfilled, (state, action) => {
-        state.status = "succeeded";
-        state.items = action.payload;
-      })
-      .addCase(fetchImages.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
       })
