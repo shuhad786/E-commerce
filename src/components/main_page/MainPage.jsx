@@ -12,7 +12,7 @@ function MainPage() {
       <div className="flex rounded-xl mb-20 mt-10 w-full h-auto bg-slate-200">
         <img id="main-image" className="w-24 h-24 mb-4" src={Sale} alt="sale image" />
         <div className='flex justify-between items-center w-10/12 p-4'>
-          <p className="ml-36 font-bold text-4xl text-emerald-400">Check out <br /> our sale now</p>
+          <p className="ml-36 font-bold text-5xl text-emerald-400">Check out <br /> our sale now</p>
           <div className='flex flex-col items-center justify-center'>
             <img className="w-56 h-44 rounded-xl" src={Special} alt="special image" />
             <p className='text-lg font-semibold text-red-600 mt-8'>15% off while stocks last</p>

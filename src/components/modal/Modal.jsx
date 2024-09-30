@@ -11,9 +11,9 @@ function Modal({ selectedItem, closeModal }) {
         <div className="ml-8">
           <h2 className="text-xl font-bold mb-4">{selectedItem.title}</h2>
           <p className="text-md font-bold">
-            Price: <span className="bg-white p-1 rounded-lg shadow-inner shadow-slate-400 text-sm font-semibold text-black">${selectedItem.price}</span>
+            Price: <span className="bg-white p-1 rounded-lg shadow-inner shadow-slate-400 text-sm font-semibold text-black">R{selectedItem.price}</span>
           </p>
-          <p className="text-md font-bold mt-4 bg-white p-1 rounded-lg shadow-inner shadow-slate-400 text-sm font-semibold text-black">
+          <p className="text-md font-bold mt-4 bg-white p-1 rounded-lg shadow-inner shadow-slate-400 text-sm text-black">
             <span className="text-sm font-semibold text-slate-500">{selectedItem.description}</span>
           </p>
         </div>
