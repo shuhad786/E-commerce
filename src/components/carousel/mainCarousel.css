@@ -1,0 +1,7 @@
+.swiper-scrollbar {
+  background-color: transparent; /* Change the background color */
+}
+
+.swiper-scrollbar-drag {
+  background-color: rgb(23, 25, 100); /* Change the color of the scrollbar handle */
+}
