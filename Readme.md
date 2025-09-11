@@ -1,9 +1,11 @@
 main idea is e-commerce
 
+Live link demo: https://incandescent-puffpuff-dbb234.netlify.app/
+
 features:
 
 - modal implemented.
-- payment methods.
+- payment method: Payfast payment gateway.
 - color scheme implemented.
 - navigation impletmented.
 - api needed. [https://fakestoreapi.com/docs]
